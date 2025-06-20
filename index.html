@@ -127,15 +127,24 @@
      <a href="https://drive.google.com/file/d/1eq9RYq6SmHUmltN5eNPVRLcjbN4NMNIq/view?usp=sharing" target="_blank" class="cv-link">View My CV</a>
 
     <!-- ✅ Contact Form Starts Here -->
-   <form action="https://formsubmit.co/1e3250d3adc5e0dafe2ae8b1bb1e3548" method="POST">
-      <input type="hidden" name="_captcha" value="true">
+<form action="https://formsubmit.co/1e3250d3adc5e0dafe2ae8b1bb1e3548" method="POST">
+  <!-- Enable CAPTCHA to prevent spam -->
+  <input type="hidden" name="_captcha" value="true">
+
+  <!-- Optional: Nicely formatted email -->
   <input type="hidden" name="_template" value="table">
-  
+
+  <!-- Honeypot field (hidden from humans, bots will fill this) -->
+  <input type="text" name="_honey" style="display:none">
+
+  <!-- User input fields -->
   <input type="text" name="name" placeholder="Your Name" required>
   <input type="email" name="email" placeholder="Your Email" required>
   <textarea name="message" placeholder="Your Message" required></textarea>
+  
   <button type="submit">Send</button>
 </form>
+
   </div>
 </body>
 </html>

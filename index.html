@@ -1,59 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Frontbeat — The Way to Salvation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Russel Olayres — HR Graduate</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: Georgia, serif;
-      color: #fff;
-      background-image: url('https://images.unsplash.com/photo-1597274133314-48d0e4de4c7d?auto=format&fit=crop&w=1600&q=80');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      color: #333;
+      line-height: 1.6;
     }
-    .content {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 40px;
-      max-width: 700px;
-      border-radius: 8px;
-      box-shadow: 0 0 15px #000;
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
     }
+
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
     h1 {
-      color: #ffcc00;
-      margin-bottom: 20px;
+      text-align: center;
+      color: #007BFF;
     }
-    blockquote {
-      font-style: italic;
-      border-left: 3px solid #ffcc00;
-      padding-left: 15px;
-      margin: 20px 0;
-      color: #ddd;
-    }
+
     p {
-      margin: 16px 0;
+      font-size: 1.05rem;
+    }
+
+    .cv-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 18px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .cv-link:hover {
+      background-color: #0056b3;
+    }
+
+    form {
+      margin-top: 40px;
+    }
+
+    form h2 {
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 15px;
+      }
+
+      .cv-link, button {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Frontbeat — The Way to Salvation</h1>
+  <div class="container">
+    <img src="profile.jpg" alt="My Photo" class="profile" />
+    <h1>Russel Olayres</h1>
+    <p>Hello! I’m a final-year Human Resources Management student graduating in <strong>July 2025</strong>.</p>
+    <p>I’m passionate about talent development, workplace culture, and building environments where people and organizations thrive together.</p>
+    <p>If you're interested in my background or would like to collaborate, feel free to check out my CV below or get in touch!</p>
 
-    <p>Religion cannot save you, for it is written:</p>
-    <blockquote>"Not by works of righteousness which we have done, but according to his mercy he saved us..." — Titus 3:5 (KJB)</blockquote>
+     <a href="https://drive.google.com/file/d/1eq9RYq6SmHUmltN5eNPVRLcjbN4NMNIq/view?usp=sharing" target="_blank" class="cv-link">View My CV</a>
 
-    <p>Only faith in Jesus Christ can save, as it says:</p>
-    <blockquote>"For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:" — Ephesians 2:8 (KJB)</blockquote>
+    <!-- ✅ Contact Form Starts Here -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <h2>Contact Me</h2>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
 
-    <blockquote>"Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me." — John 14:6 (KJB)</blockquote>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="_replyto" required />
 
-    <p>Trust in Jesus alone for salvation, for He is the only way to eternal life.</p>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </div>
 </body>
 </html>

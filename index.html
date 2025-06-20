@@ -126,25 +126,67 @@
 
      <a href="https://drive.google.com/file/d/1eq9RYq6SmHUmltN5eNPVRLcjbN4NMNIq/view?usp=sharing" target="_blank" class="cv-link">View My CV</a>
 
-    <!-- ✅ Contact Form Starts Here -->
-<form action="https://formsubmit.co/1e3250d3adc5e0dafe2ae8b1bb1e3548" method="POST">
-  <!-- Enable CAPTCHA to prevent spam -->
+    <!-- ✅ Styled Contact Form Starts Here -->
+<style>
+  .contact-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background-color: #218838;
+  }
+
+  @media (max-width: 600px) {
+    .contact-form {
+      padding: 15px;
+    }
+  }
+</style>
+
+<form class="contact-form" action="https://formsubmit.co/1e3250d3adc5e0dafe2ae8b1bb1e3548" method="POST">
+  <!-- Enable CAPTCHA -->
   <input type="hidden" name="_captcha" value="true">
 
-  <!-- Optional: Nicely formatted email -->
+  <!-- Format email -->
   <input type="hidden" name="_template" value="table">
 
-  <!-- Honeypot field (hidden from humans, bots will fill this) -->
+  <!-- Anti-bot honeypot -->
   <input type="text" name="_honey" style="display:none">
 
-  <!-- User input fields -->
   <input type="text" name="name" placeholder="Your Name" required>
   <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  
-  <button type="submit">Send</button>
-</form>
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
+  <button type="submit">Send Message</button>
+</form>
   </div>
 </body>
 </html>

@@ -25,14 +25,15 @@
     }
 
     img.profile {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto 20px;
-      object-fit: cover;
-      box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    }
+  width: 200px; /* optional: increase size */
+  height: 200px; /* optional: increase size */
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  object-fit: contain; /* changed from 'cover' */
+  background-color: #fff; /* fills the padding area */
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
 
     h1 {
       text-align: center;
